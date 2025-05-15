@@ -2,7 +2,7 @@ name: poc-test
 on:
   push:
       branches:
-        - "experimental/workflow-check"
+        - "main"
 jobs:
   build:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
