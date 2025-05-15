@@ -22,4 +22,6 @@ jobs:
         python -m pip install build pipenv tox --user
 
     - name: Print Pipenv Python version
-      run: pipenv --py
+      run: |
+        pipenv sync --dev
+        pipenv --py
